@@ -69,6 +69,11 @@ class NotificationService {
 
   // Schedule a notification for a task
   static Future<void> scheduleNotification(Task task) async {
+    // Skip scheduling for now since Task model doesn't have reminder/dueDate properties
+    return;
+
+    // TODO: Uncomment and implement when Task model has reminder, dueDate, dueTime properties
+    /*
     if (!task.reminder || task.completed) return;
 
     try {
@@ -120,6 +125,7 @@ class NotificationService {
     } catch (e) {
       print('Error scheduling notification: $e');
     }
+    */
   }
 
   // Cancel a specific notification
@@ -148,15 +154,20 @@ class NotificationService {
     
     if (!notificationsEnabled) return;
 
-    for (final task in tasks) {
-      if (task.reminder && !task.completed) {
-        await scheduleNotification(task);
-      }
-    }
+    // TODO: Implement when Task model has reminder property
+    // for (final task in tasks) {
+    //   if (task.reminder && !task.completed) {
+    //     await scheduleNotification(task);
+    //   }
+    // }
   }
 
   // Parse task date and time into DateTime
   static DateTime? _parseTaskDateTime(Task task) {
+    // TODO: Implement when Task model has dueDate and dueTime properties
+    return null;
+    
+    /*
     try {
       if (task.dueDate.isEmpty || task.dueTime.isEmpty) return null;
 
@@ -177,6 +188,7 @@ class NotificationService {
       print('Error parsing task date/time: $e');
       return null;
     }
+    */
   }
 
   // Convert DateTime to TZDateTime (required for scheduling)
