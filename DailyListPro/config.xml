@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.dailylistpro.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Daily List Pro</name>
+    <description>A beautiful daily task management app</description>
+    <author email="support@dailylistpro.com" href="http://dailylistpro.com">
+        Daily List Pro Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="icon.png" density="ldpi" />
+        <icon src="icon.png" density="mdpi" />
+        <icon src="icon.png" density="hdpi" />
+        <icon src="icon.png" density="xhdpi" />
+        <icon src="icon.png" density="xxhdpi" />
+        <icon src="icon.png" density="xxxhdpi" />
+    </platform>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="33" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="FadeSplashScreenDuration" value="500" />
+    <preference name="SplashScreenBackgroundColor" value="#667eea" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
+</widget>
