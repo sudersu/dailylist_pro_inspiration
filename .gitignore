@@ -1,0 +1,18 @@
+# Large SDK files
+android-sdk/
+flutter/
+*.tar.xz
+*.zip
+
+# Build artifacts
+build/
+.dart_tool/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
